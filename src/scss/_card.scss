@@ -16,30 +16,22 @@
         }
 
         .overlay {
+            transition: all 0.6s;
             border-radius: 10px;
             position: absolute;
+            display: grid;
+            place-items: center;
             top:0;
-            bottom:0;
-            left:0; 
-            right:0;
             height:100%;
             width:100%; 
             opacity:0;
-            background-color: $Cyan;
+            background-color: hsla(178, 100%, 50%, 30%);
             cursor: pointer;
 
             &:hover {
-                opacity: 0.4;
+                opacity: 1;
             }
 
-            .icon-view {
-                position: absolute;
-                transform: translate(-50%, -50%);
-                top: 50%;
-                left: 50%;
-                color: $White;
-            }
-           
         }
     }
 

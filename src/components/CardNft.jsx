@@ -11,7 +11,7 @@ const CardNft = () => {
             <div className="card-img-container">
                 <img className='card-img' src={equilibrium} alt="equilibrium"/>
                 <div className='overlay'>
-                    <div className='icon-view'><IconView/></div>
+                    <div><IconView/></div>
                 </div>
             </div>  
 
