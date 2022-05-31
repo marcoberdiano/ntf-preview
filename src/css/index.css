@@ -127,6 +127,7 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  margin-top: 25px;
   background-color: hsl(217deg, 54%, 11%);
 }
 
