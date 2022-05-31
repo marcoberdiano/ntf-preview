@@ -1,0 +1,134 @@
+.card-container {
+    width: 23em;
+    height: 36em;
+    padding: 1.3em;
+    background-color: $Verydarkblue;
+    border-radius: 20px;
+
+    .card-img-container {
+        position: relative;
+        width: 100%;
+        .card-img {
+            display: block;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .overlay {
+            border-radius: 10px;
+            position: absolute;
+            top:0;
+            bottom:0;
+            left:0; 
+            right:0;
+            height:100%;
+            width:100%; 
+            opacity:0;
+            background-color: $Cyan;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.4;
+            }
+
+            .icon-view {
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+                color: $White;
+            }
+           
+        }
+    }
+
+    .card-title, .card-text, .card-info-container {
+        margin: 15px 0px;
+    }
+
+    .card-title {
+        font-size: 1.3em;
+        color: $White;
+
+        &:hover{
+            color: $Cyan;
+            cursor: pointer;
+        }
+    }
+
+    .card-text {
+        font-size: 18px;
+        color: $Softblue;
+        font-weight: 300;
+    }
+
+    .card-info-container {
+        display: flex;
+        justify-content: space-between;
+
+        .card-info-left, .card-info-right {
+            color: $Cyan;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .card-info-right {
+            color: $Softblue;
+        }
+    }
+
+    .line {
+        border-bottom: 1px solid $Verydarkblueline;
+    }
+
+
+    .profile-container {
+        display: flex;
+        margin: 5px 0px;
+        padding: 5px 0px;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: center;
+
+        .profile-img{
+            width: 50px;
+            border: 2px solid $White;
+            border-radius: 50%;
+        }
+
+        .profile-text {
+            color: $Softblue;
+            .profile-author {
+                color: $White;
+                &:hover{
+                    color: $Cyan;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .card-container {
+        width: 20em;
+        height: 33em;
+        padding: 1em;
+
+        .card-title {
+            font-size: 1.1rem;
+        }
+
+        .card-text {
+            font-size: 16px;
+        }
+
+        .card-info-left-text, .card-info-right-text, .profile-text  {
+            margin-left: 5px;
+        }
+    }
+}
