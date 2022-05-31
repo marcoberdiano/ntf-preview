@@ -1,0 +1,25 @@
+.profile-container {
+    display: flex;
+    margin: 5px 0px;
+    padding: 5px 0px;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+
+    .profile-img{
+        width: 50px;
+        border: 2px solid $White;
+        border-radius: 50%;
+    }
+
+    .profile-text {
+        color: $Softblue;
+        .profile-author {
+            color: $White;
+            &:hover{
+                color: $Cyan;
+                cursor: pointer;
+            }
+        }
+    }
+}

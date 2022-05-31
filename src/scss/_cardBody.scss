@@ -1,0 +1,41 @@
+.card-title, .card-text, .card-info-container {
+    margin: 15px 0px;
+}
+
+.card-title {
+    font-size: 1.3em;
+    color: $White;
+
+    &:hover{
+        color: $Cyan;
+        cursor: pointer;
+    }
+}
+
+.card-text {
+    font-size: 18px;
+    color: $Softblue;
+    font-weight: 300;
+}
+
+.card-info-container {
+    display: flex;
+    justify-content: space-between;
+
+    .card-info-left, .card-info-right {
+        color: $Cyan;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .card-info-right {
+        color: $Softblue;
+    }
+}
+
+.line {
+    border-bottom: 1px solid $Verydarkblueline;
+}
